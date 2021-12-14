@@ -1,5 +1,8 @@
 
 body{
+    font-family: 'Comforter', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto', sans-serif;
     color:rgb(15, 14, 14);
     font-size: 20px;
     background-image: url(https://images7.alphacoders.com/118/1188302.jpg);
@@ -19,6 +22,9 @@ body{
     border-radius: 5px;
 box-shadow: 5px 5px 15px 5px #000000;
 }
+.carousel-inner img{
+    width: 100%;
+}
 
 div .container{
   
@@ -28,6 +34,11 @@ div .container{
 
 .col-md-3{
    margin: 10px 0px ;
+}
+
+.col-md-3:hover{
+    background-color:#000;
+   opacity:0.8;
 }
 
 .img-fluid{
@@ -54,3 +65,23 @@ footer{
     height: 5vh;
 }
 
+
+@media (max-width: 600px){
+    .carousel-inner img{
+        width: 100%;
+    }
+
+    .col-md-3{
+
+   width: 150px;
+    
+    }
+
+    
+
+    div.row{
+        display: flex;
+        justify-content: center;
+    }
+
+}
